@@ -25,6 +25,7 @@ module.exports = function (grunt) {
     grunt.initConfig( configs );
     
     grunt.registerTask('default', ['concurrent:test', 'clean:release', 'concurrent:release', 'watcher']);
+    grunt.registerTask('build', ['concurrent:test', 'clean:release', 'concurrent:release']);
     grunt.registerTask('watcher', ['watch']);
     grunt.registerTask('release', ['concurrent:test', 'clean:release', 'concurrent:release', 'uglify', 'jshint:afterconcat']);
 };  
