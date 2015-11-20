@@ -17,5 +17,6 @@ Install the dependencies with `npm install` or `sudo npm install`. Then just run
 
 ## Grunt tasks
 - **grunt** will build the files inside the /dist folder and perform a watch. You are ready to start developing
+- **grunt build** will build the files inside the /dist folder. No watcher.
 - **grunt clean** will clean the dist folder
 - **grunt release** will do the same build but with a js uglify in the end
